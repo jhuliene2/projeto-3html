@@ -1,0 +1,501 @@
+@import url("styles/header.css");
+@import url(styles/banner.css);
+@import url(styles/carrossel.css);
+@import url(styles/topicos.css);
+@import url(styles/contato.css);
+
+:root {
+  
+    --cor-de-fundo: #500e8d;
+    --verde:#583394;
+    --escuro: #48066e;
+    --azul-degrade:linear-gradient(97.54deg, #7764ca 35.49%, #844fc9 165.37%);
+    --fonte-principal: "Poppins";
+    --azul-blacl: #c928d8d5;
+    --fonte-secundario: "josefin sans"
+
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+   font-family: var(--fonte-principal);
+   font-size: 16px;
+   font-weight: 400;
+ 
+
+}
+
+.swiper-wrapper {
+    display: flex;
+  }
+  
+  .swiper-slide {
+    flex: 0 0 245.17px; /* Define a largura fixa de 245.17 pixels */
+    height: 345px; /* Define a altura fixa de 345 pixels */
+    margin-right: 10px; /* Espaçamento entre as imagens (opcional) */
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para manter a proporção da imagem */
+  }
+
+  .carrssel__titulo {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-size: 1rem; /* Tamanho do texto */
+    color: #b3a8a8; /* Cor do texto */
+  }
+
+  .descrição__titulo{
+    color: #cb1bd1;
+    font-weight: 700;
+  }
+  .card__descrição {
+    width: 380px;
+    height: 295px;
+  
+    padding: 20px;
+    
+}
+
+.descrição {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.descrição__titulo {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.descrição__titulo-livro {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.descrição__texto {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.tópicos__lista {
+  display: flex;
+}
+
+.opções {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.opções_item {
+  color: black; /* Define a cor preta para os itens da lista */
+}
+.opções_link {
+  color: rgb(0, 0, 0); /* Define a cor preta para os links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+.opções_link:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+     /* Estilo padrão para o título e as opções */
+     .container__titulo {
+      font-size: 1,8em; /* Ajuste conforme necessário */
+  }
+  .opções {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  .opções_item {
+      color: black;
+  }
+  .opções_link {
+      color: black;
+      text-decoration: none;
+  }
+  .opções_link:hover {
+      text-decoration: underline;
+  }
+  
+  /* Estilos para telas pequenas */
+  @media (max-width: 600px) {
+      .container__titulo,
+      .opções {
+          display: none;
+      }
+  }
+
+  .opções_botão:checked~.lista-menu {
+    display: block;
+    width: auto;
+}
+.opções__botão {
+  display: none;
+}
+.opções {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.opções_item {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.opções_link {
+  text-decoration: none;
+  color: #000; /* Cor do texto */
+}
+
+/* Exemplo de como estilizar para ocultar itens em telas pequenas */
+@media (max-width: 768px) {
+  .opções_item {
+      display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner__titulo {
+      font-size: 36px;
+  }
+}
+
+.banner__pesquisa {
+  width: 50%;
+}
+
+.banner__pesquisa::placeholder {
+  background-position: 7em;
+}
+   /* Estilo padrão para a imagem */
+   .container__imagem {
+    width: 50px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para imagens com fundo transparente */
+.container__imagem-transparente {
+    opacity: 0.8; /* Ajuste a opacidade conforme necessário */
+}
+
+/* Estilos para telas grandes */
+@media (min-width: 1024px) {
+    .container__imagem {
+        display: none;
+    }
+}
+
+.swiper-slide img {
+  width: 80%; /* Ajuste o valor conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove qualquer espaço extra ao redor da imagem */
+  margin: 0 auto; /* Centraliza a imagem dentro do slide */
+}
+
+/* Estilo padrão para telas pequenas */
+.container__imagem {
+  display: inline-block;
+}
+
+/* Quando a tela for maior que 768px, esconder a imagem de favoritos */
+@media (min-width: 768px) {
+  .container__imagem[src*="meus Favoritos"] {
+      display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carrossel__titulo {
+      font-size: 26px;
+  }
+
+  .swiper-pagination {
+      margin: 2em 0 3em 0;
+  }
+
+  .swiper {
+      width: 60%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+      display: block;
+      top: 60%;
+  }
+
+  .card {
+      width: 40%;
+      margin: 2em auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .carrossel__titulo {
+      font-size: 26px;
+  }
+
+  .swiper-pagination {
+      margin: 2em 0 3em 0;
+  }
+
+  .swiper {
+      width: 60%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+      display: block; /* Garante que os botões sejam exibidos */
+      position: absolute; /* Posiciona os botões corretamente */
+      top: 50%; /* Alinha verticalmente no meio do swiper */
+      transform: translateY(-50%); /* Ajusta o alinhamento vertical para que os botões fiquem centralizados */
+      background-color: rgba(0,0,0,0.5); /* Adiciona um fundo semitransparente para melhor visibilidade */
+      border-radius: 50%; /* Dá um formato arredondado aos botões */
+      width: 40px; /* Define a largura dos botões */
+      height: 40px; /* Define a altura dos botões */
+      color: #fff; /* Define a cor do ícone dos botões */
+      z-index: 10; /* Garante que os botões fiquem acima de outros elementos */
+  }
+
+  .swiper-button-prev {
+      left: 10px; /* Posiciona o botão de voltar à esquerda */
+  }
+
+  .swiper-button-next {
+      right: 10px; /* Posiciona o botão de avançar à direita */
+  }
+
+  .card {
+      width: 40%;
+      margin: 2em auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contato {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .contato__titulo {
+    font-size: 24px;
+}
+
+.contato__descrição {
+    margin-right: 1em;
+    width: 30%;
+}
+  .contato__email {
+      width: 30%;
+  }
+}
+
+/* Footer */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #5d0ca8;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #9e0707;
+}
+
+.social-icons a:hover {
+  color: #001d3b;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+@media screen and (min-width: 1728px) {
+  .container__link {
+      display: flex;
+      align-items: center;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  margin-right: 20px; /* Espaçamento entre itens, ajuste conforme necessário */
+}
+
+.container__imagem {
+  margin-right: 10px; /* Espaçamento entre imagem e texto */
+}
+
+.container__texto {
+  font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+  color: black; /* Cor do texto */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaçamento entre os links, ajuste conforme necessário */
+}
+
+.container__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.container__imagem {
+  margin-right: 10px; /* Espaçamento entre imagem e texto */
+}
+
+.container__texto {
+  font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+  color: black; /* Cor do texto */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaçamento entre os links, ajuste conforme necessário */
+}
+
+.container__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.container__imagem {
+  margin-right: 10px; /* Espaçamento entre imagem e texto */
+}
+
+.container__texto {
+  font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+  color: black; /* Cor do texto */
+}
+.cabecalho {
+  padding: 0 2em;
+}
+
+.opcoes {
+  margin-right: auto;
+}
+
+.container__texto {
+  display: block;
+}
+
+@media screen and (min-width: 1728px) {
+  .container__link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--preto);
+  }
+}
+
+.cabecalho {
+  padding: 0 2em;
+}
+
+.opcoes {
+  margin-right: auto;
+}
+
+.container__texto {
+  display: block;
+}
+
+@media screen and (min-width: 1728px) {
+  .banner_pesquisa {
+      width: 35%;
+  }
+  .banner_pesquisa::placeholder {
+      background-position: 12em;
+  }
+  .banner {
+      padding: 5em 0;
+  }
+}
+
+
+
+@media screen and (min-width: 1728px) {
+  .carrossel_container {
+      display: flex;
+      margin: 0 20vw 3em 20vw
+      
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .tópicos {
+      padding: 2em 3vw;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .contato {
+      padding: 3em 2vw;
+  }
+}
+
+.carrossel__titulo {
+  font-size: 2.5em; /* Ajuste conforme necessário */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em; /* Espaçamento abaixo do título */
+}

@@ -1,0 +1,180 @@
+.carrossel__titulo{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+display: none;
+}
+
+.swiper-pagination{
+    position:initial;
+    margin: 0.5em 0;
+}
+ 
+.card__descrição{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.card__botões {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; /* Remover pontos da lista */
+    padding: 0; /* Remover espaçamento padrão da lista */
+    margin: 0; /* Remover margem padrão da lista */
+}
+
+.botões_item {
+    margin-right: 10px; /* Espaçamento entre os botões */
+    text-align: center
+}
+
+
+.botões{
+    display: flex;
+    display: flex;
+    list-style-type: none; /* Remover pontos da lista */
+    padding: 0; /* Remover espaçamento padrão da lista */
+    margin: 0; /* Remover margem padrão da lista */
+    text-align: center
+    
+}
+
+.card{
+   
+    background: #693c8dea;
+    box-shadow: 0px 4px 4px rgba(255, 0, 255, 0.25);
+    border-radius: 10px;
+    border-radius: 10px;
+    margin: 0.1em;
+    padding: 0em ;
+}
+
+.descrição__titulo{
+    color: #9d37d8;
+    font-weight: 700;
+  }
+
+  .descrição__titulo-livro{
+    color: var(--azul-blacl);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+  }
+
+  .descrição__texto{
+    font-size: 14px;
+  }
+
+  .botões_item{
+    margin: 0 0.5em;
+
+  }
+
+  .botões__ancora{
+    background-color: var(--azul-blacl);
+    padding: 1em 2.2em;
+    color: var(--escuro);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  @media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        font-size: 26px;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        width: 40%;
+        margin: 2em auto;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        width: 40%;
+        margin: 2em auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+  .carrossel__titulo {
+      font-size: 26px;
+  }
+
+  .swiper-pagination {
+      margin: 2em 0 3em 0;
+  }
+
+  .swiper {
+      width: 60%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+      display: block; /* Garante que os botões sejam exibidos */
+      position: absolute; /* Posiciona os botões corretamente */
+      top: 50%; /* Alinha verticalmente no meio do swiper */
+      transform: translateY(-50%); /* Ajusta o alinhamento vertical para que os botões fiquem centralizados */
+      background-color: rgba(118, 40, 170, 0.5); /* Adiciona um fundo semitransparente para melhor visibilidade */
+      border-radius: 50%; /* Dá um formato arredondado aos botões */
+      width: 40px; /* Define a largura dos botões */
+      height: 40px; /* Define a altura dos botões */
+      color: #fff; /* Define a cor do ícone dos botões */
+      z-index: 10; /* Garante que os botões fiquem acima de outros elementos */
+  }
+
+  .swiper-button-prev {
+      left: 10px; /* Posiciona o botão de voltar à esquerda */
+  }
+
+  .swiper-button-next {
+      right: 10px; /* Posiciona o botão de avançar à direita */
+  }
+
+  .card {
+      width: 40%;
+      margin: 2em auto;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel_container {
+        display: flex;
+        margin: 0 20vw 3em 20vw
+    }
+}
+
+.carrossel__titulo {
+    font-size: 2.5em; /* Ajuste conforme necessário */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em; /* Espaçamento abaixo do título */
+}
